@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-en="East Kallada (South) Co-op Bank Ltd No Q 187 | Gallery"
         data-ml="ഈസ്റ്റ് കല്ലട (സൗത്ത് ) സർവീസ് സഹകരണ ബാങ്ക് ലിമിറ്റഡ് ക്യൂ 187">East Kallada (South) Co-op Bank Ltd No
-        Q
-        187 | Gallery</title>
+        Q 187 | Gallery</title>
+    <meta name="description" content="Photo gallery showcasing the bank's buildings, outlets, and community functions.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Serif+Malayalam:wght@400;600;700&display=swap"
@@ -21,69 +21,1349 @@
     <main>
         <section class="inner-hero reveal">
             <div class="inner-hero-content">
-                <h1 data-en="Moments &amp; Events" data-ml="നിമിഷങ്ങളും സംഭവങ്ങളും">Moments &amp; Events</h1>
+                <h1 data-en="Photo Gallery" data-ml="ഫോട്ടോ ഗാലറി">Photo Gallery</h1>
                 <div class="divider center"></div>
-                <p data-en="Visual documentation of community initiatives, bank functions, and cultural gatherings."
-                    data-ml="കമ്മ്യൂണിറ്റി സംരംഭങ്ങൾ, ബാങ്ക് പ്രവർത്തനങ്ങൾ എന്നിവയുടെ ദൃശ്യരേഖകൾ.">Visual documentation
-                    of community initiatives, bank functions, and cultural gatherings.</p>
+                <p data-en="A visual journey through our buildings, outlets, and memorable events."
+                    data-ml="ഞങ്ങളുടെ കെട്ടിടങ്ങൾ, ഔട്ട്‌ലെറ്റുകൾ, അവിസ്മരണീയ പരിപാടികൾ എന്നിവയുടെ ദൃശ്യയാത്ര.">
+                    A visual journey through our buildings, outlets, and memorable events.</p>
             </div>
         </section>
 
-        <!-- Visual Presentation Matrix -->
-        <section class="gallery-showcase reveal">
-            <div class="interactive-gallery-grid">
+        <!-- Gallery Section with Category Tabs -->
+        <section class="gallery-tabbed-section">
 
-                <!-- Image Item 1 -->
-                <div class="gallery-item-card">
-                    <div class="gallery-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80"
-                            alt="Bank Event">
-                        <div class="gallery-item-overlay">
-                            <div class="overlay-inner-info">
-                                <span class="tag">Society Events</span>
-                                <h4 data-en="Annual General Body Meeting" data-ml="വാർഷിക പൊതുയോഗം">Annual General Body
-                                    Meeting</h4>
+            <!-- Category Filter Tabs -->
+            <div class="gallery-tab-bar">
+                <button class="gallery-tab active" data-category="all">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span data-en="All Photos" data-ml="എല്ലാ ഫോട്ടോകളും">All Photos</span>
+                </button>
+                <button class="gallery-tab" data-category="building">
+                    <i class="fa-solid fa-building"></i>
+                    <span data-en="Building" data-ml="കെട്ടിടങ്ങൾ">Building</span>
+                </button>
+                <button class="gallery-tab" data-category="outlet">
+                    <i class="fa-solid fa-store"></i>
+                    <span data-en="Outlets" data-ml="ഔട്ട്‌ലെറ്റുകൾ">Outlets</span>
+                </button>
+                <button class="gallery-tab" data-category="function">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span data-en="Functions" data-ml="പരിപാടികൾ">Functions</span>
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-masonry-grid" id="galleryGrid">
+
+                <!-- ============================================
+             BUILDING IMAGES
+             ============================================ -->
+
+                <!-- <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.37.48 AM.jpeg" alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
                             </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.03 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Image Item 2 -->
-                <div class="gallery-item-card">
-                    <div class="gallery-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4?auto=format&fit=crop&w=600&q=80"
-                            alt="Distribution Event">
-                        <div class="gallery-item-overlay">
-                            <div class="overlay-inner-info">
-                                <span class="tag">Welfare</span>
-                                <h4 data-en="Agricultural Subsidy Distribution" data-ml="കാർഷിക സബ്സിഡി വിതരണം">
-                                    Agricultural Subsidy Distribution</h4>
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.03 AM (2).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
                             </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Image Item 3 -->
-                <div class="gallery-item-card">
-                    <div class="gallery-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80"
-                            alt="Public Services">
-                        <div class="gallery-item-overlay">
-                            <div class="overlay-inner-info">
-                                <span class="tag">Services</span>
-                                <h4 data-en="PDS Centre Operations" data-ml="റേഷൻ കട പ്രവർത്തനങ്ങൾ">PDS Centre
-                                    Operations</h4>
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.03 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
                             </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.15 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.16 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.16 AM (2).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.16 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.17 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.17 AM (2).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.41 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.38.57 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.42.42 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.42.45 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.43.28 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.43.33 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.43.37 AM (1).jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/WhatsApp Image 2026-07-13 at 11.43.37 AM.jpeg"
+                            alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/hero1.png" alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="building">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/bank/hero2.png" alt="Bank Office">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag " data-en="Building" data-ml="കെട്ടിടം">Building</span>
+                                <h4 data-en="Bank Office" data-ml="ബാങ്ക് ഓഫീസ്">Bank Office</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ============================================
+             OUTLET IMAGES
+             ============================================ -->
+
+                <!-- <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.38.17 AM.jpeg" alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.38.41 AM (1).jpeg" alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.38.42 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.26 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.27 AM (2).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.27 AM (3).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.27 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.28 AM (1).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.38 AM (1).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.39.38 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.40.08 AM (1).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.40.09 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.40.54 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.31 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.32 AM (1).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.33 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.38 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.41 AM.jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="outlet">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/oulet/WhatsApp Image 2026-07-13 at 11.43.43 AM (1).jpeg"
+                            alt="Outlet Center">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-outlet" data-en="Outlet"
+                                    data-ml="ഔട്ട്‌ലെറ്റ്">Outlet</span>
+                                <h4 data-en="Outlet Center" data-ml="ഔട്ട്‌ലെറ്റ് സെന്റർ">Outlet Center</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- ============================================
+             FUNCTION / EVENT IMAGES
+             ============================================ -->
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/1.jpeg" alt="Annual General Body Meeting">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Annual General Body Meeting" data-ml="വാർഷിക പൊതുയോഗം">Annual General Body -->
+                                <!-- Meeting</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/2.jpeg" alt="Award Ceremony">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Award Ceremony" data-ml="അവാർഡ് ദാനം">Award Ceremony</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/3.jpeg" alt="Onam Celebration">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Onam Celebration" data-ml="ഓണാഘോഷം">Onam Celebration</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/4.jpeg" alt="Education Grant Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Education Grant Distribution" data-ml="വിദ്യാഭ്യാസ ഗ്രാന്റ് വിതരണം">
+                                    Education Grant Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/5.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/6.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/7.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/8.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/9.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/10.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/11.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/12.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/13.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/14.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/15.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/16.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/17.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/18.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4>
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/19.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/20.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/21.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/22.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/23.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/24.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/25.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/26.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/27.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/28.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/29.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/30.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="function">
+                    <div class="gallery-card-image">
+                        <img loading="lazy" src="assets/other/31.jpeg" alt="Pension Distribution">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-overlay-content">
+                                <span class="gallery-tag gallery-tag-function" data-en="Function"
+                                    data-ml="പരിപാടി">Function</span>
+                                <!-- <h4 data-en="Pension Distribution" data-ml="പെൻഷൻ വിതരണം">Pension Distribution</h4> -->
+                            </div>
+                            <button class="gallery-zoom-btn" aria-label="View Full Image">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- Empty State (shown when no images match) -->
+            <div class="gallery-empty-state" id="galleryEmpty" style="display:none;">
+                <i class="fa-solid fa-images"></i>
+                <p data-en="No photos in this category yet." data-ml="ഈ വിഭാഗത്തിൽ ഇതുവരെ ഫോട്ടോകൾ ഇല്ല.">No photos in
+                    this category yet.</p>
+            </div>
+
         </section>
+
+        <!-- Lightbox Modal -->
+        <div class="gallery-lightbox" id="galleryLightbox">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightboxImage" src="" alt="Gallery Image">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+
     </main>
 
     <footer id="global-footer" class="main-footer"></footer>
     <script src="script.js"></script>
+
+    <!-- Gallery Tab Filter & Lightbox Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // === Tab Filter Logic ===
+            const tabs = document.querySelectorAll('.gallery-tab');
+            const cards = document.querySelectorAll('.gallery-card');
+            const grid = document.getElementById('galleryGrid');
+            const emptyState = document.getElementById('galleryEmpty');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    const category = tab.dataset.category;
+                    let visibleCount = 0;
+
+                    cards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = '';
+                            card.style.animation = 'galleryFadeIn 0.5s ease forwards';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Show/hide empty state
+                    if (visibleCount === 0) {
+                        emptyState.style.display = 'flex';
+                        grid.style.display = 'none';
+                    } else {
+                        emptyState.style.display = 'none';
+                        grid.style.display = '';
+                    }
+                });
+            });
+
+            // === Lightbox Logic ===
+            const lightbox = document.getElementById('galleryLightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+            const closeBtn = document.getElementById('lightboxClose');
+            const prevBtn = document.getElementById('lightboxPrev');
+            const nextBtn = document.getElementById('lightboxNext');
+
+            let currentImages = [];
+            let currentIndex = 0;
+
+            function getVisibleCards() {
+                return Array.from(cards).filter(c => c.style.display !== 'none');
+            }
+
+            function openLightbox(index) {
+                currentImages = getVisibleCards();
+                currentIndex = index;
+                updateLightbox();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function updateLightbox() {
+                const card = currentImages[currentIndex];
+                const img = card.querySelector('img');
+                const title = card.querySelector('h4');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.textContent = title ? title.textContent : '';
+                lightboxCounter.textContent = (currentIndex + 1) + ' / ' + currentImages.length;
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                updateLightbox();
+            }
+
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                updateLightbox();
+            }
+
+            // Click handlers on gallery cards
+            cards.forEach((card, i) => {
+                card.addEventListener('click', () => {
+                    const visibleCards = getVisibleCards();
+                    const visibleIndex = visibleCards.indexOf(card);
+                    openLightbox(visibleIndex >= 0 ? visibleIndex : 0);
+                });
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
+            prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            });
+        });
+    </script>
 </body>
 
 </html>
