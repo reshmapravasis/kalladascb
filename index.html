@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-en="East Kallada (South) Co-op Bank Ltd No Q 187 | Home"
-    data-ml="ഈസ്റ്റ് കല്ലട (സൗത്ത് ) സർവീസ് സഹകരണ ബാങ്ക് ലിമിറ്റഡ് ക്യൂ 187">East Kallada (South) Co-op Bank Ltd No Q
-    187 | Home</title>
+  <title data-en="East Kallada (South) Service Co-op Bank Ltd No Q 187 | Home"
+    data-ml="ഈസ്റ്റ് കല്ലട (സൗത്ത് ) സർവീസ് സഹകരണ ബാങ്ക് ലിമിറ്റഡ് ക്യൂ 187">East Kallada (South) Service Co-op Bank
+    Ltd No Q 187 | Home</title>
   <meta name="description"
     content="Premium cooperative bank offering modern financial services, loans, and savings for the community.">
 
@@ -19,6 +19,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 
 <body>
@@ -28,139 +29,210 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span data-en="Trusted Banking Since 1987" data-ml="1987 മുതൽ വിശ്വസ്ത സേവനം">Trusted Banking Since
-              1987</span>
-          </div>
-          <h1 data-en="Growing Together, <br><span class='gradient-text'>Your Community Bank</span>"
-            data-ml="സാമ്പത്തിക സ്വാശ്രയത്വത്തിനും കമ്മ്യൂണിറ്റി വളർച്ചയ്ക്കുമായി <br><span class='gradient-text'>കല്ലട ബാങ്കിൽ ചേരുക.</span>">
-            Growing Together, <br><span class="gradient-text">Your Community Bank</span>
-          </h1>
-          <p data-en="Experience premium banking services tailored for our community. We offer secure savings, accessible loans, and modern financial solutions."
-            data-ml="നമ്മുടെ നാടിനായി മികച്ച ബാങ്കിംഗ് സേവനങ്ങൾ. സുരക്ഷിതമായ നിക്ഷേപങ്ങൾ, വായ്പകൾ, ആധുനിക സേവനങ്ങൾ എന്നിവ ഞങ്ങൾ നൽകുന്നു.">
-            Experience premium banking services tailored for our community. We offer secure savings, accessible loans,
-            and modern financial solutions.
-          </p>
-          <div class="hero-actions-row">
-            <a href="services.html" class="btn btn-primary" data-en="Explore Services"
-              data-ml="ഞങ്ങളുടെ സേവനങ്ങൾ">Explore Services</a>
-            <a href="contact.html" class="btn btn-secondary" data-en="Contact Us" data-ml="ഞങ്ങളെ ബന്ധപ്പെടുക">Contact
-              Us</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-card-floating accent-float">
-            <i class="fa-solid fa-circle-check"></i>
-            <div>
-              <h4>100% Secured</h4>
-              <p>Government Regulated</p>
+    <section class="hero full-width-hero">
+      <div class="hero-slider" id="main-hero-slider">
+
+        <!-- Slide 1: Loans -->
+        <div class="hero-slide active">
+          <img src="assets/services/ln-hero.jpg" alt="Loans & Advances">
+          <div class="hero-overlay"></div>
+          <div class="hero-container full-width-container slide-content-wrapper">
+            <div class="hero-content">
+              <div class="hero-badge light-badge">
+                <i class="fa-solid fa-hand-holding-usd"></i>
+                <span data-en="Flexible Loan Solutions" data-ml="ലളിതമായ വായ്പാ സൗകര്യങ്ങൾ">Flexible Loan
+                  Solutions</span>
+              </div>
+              <h1 class="hero-title-light"
+                data-en="Achieve Your Goals with <br><span class='gradient-text-light'>Our Loan Schemes</span>"
+                data-ml="നിങ്ങളുടെ സ്വപ്നങ്ങൾ സാക്ഷാത്കരിക്കാൻ <br><span class='gradient-text-light'>ഞങ്ങളുടെ വായ്പകൾ</span>">
+                Achieve Your Goals with <br><span class="gradient-text-light">Our Loan Schemes</span>
+              </h1>
+              <p class="hero-desc-light"
+                data-en="We offer a variety of loans with attractive interest rates to meet your personal, agricultural, and business needs."
+                data-ml="വ്യക്തിഗത, കാർഷിക, ബിസിനസ്സ് ആവശ്യങ്ങൾക്കായി ആകർഷകമായ പലിശ നിരക്കിൽ ഞങ്ങൾ വായ്പകൾ നൽകുന്നു.">
+                We offer a variety of loans with attractive interest rates to meet your personal, agricultural, and
+                business needs.
+              </p>
+              <div class="hero-actions-row">
+                <a href="services.html#loans" class="btn btn-primary" data-en="Explore Loans"
+                  data-ml="വായ്പകൾ അറിയുക">Explore Loans</a>
+              </div>
             </div>
           </div>
-          <div class="hero-image-wrapper">
-            <img src="assets/images/hero2.png" alt="Bank Illustration">
+        </div>
+
+        <!-- Slide 2: Agriculture -->
+        <div class="hero-slide">
+          <img src="assets/services/agri-hero.jpg" alt="Agricultural Loan">
+          <div class="hero-overlay"></div>
+          <div class="hero-container full-width-container slide-content-wrapper">
+            <div class="hero-content">
+              <div class="hero-badge light-badge">
+                <i class="fa-solid fa-tractor"></i>
+                <span data-en="Empowering Local Farmers" data-ml="കർഷകരെ ശാക്തീകരിക്കുന്നു">Empowering Local
+                  Farmers</span>
+              </div>
+              <h1 class="hero-title-light"
+                data-en="Growing Together, <br><span class='gradient-text-light'>Supporting Agriculture</span>"
+                data-ml="ഒരുമിച്ച് വളരാം, <br><span class='gradient-text-light'>കൃഷിയെ പിന്തുണയ്ക്കാം</span>">
+                Growing Together, <br><span class="gradient-text-light">Supporting Agriculture</span>
+              </h1>
+              <p class="hero-desc-light"
+                data-en="Specialized agricultural credit facilities designed to support our local farming communities with low interest rates."
+                data-ml="കുറഞ്ഞ പലിശ നിരക്കിൽ ഞങ്ങളുടെ പ്രാദേശിക കർഷക സമൂഹത്തെ പിന്തുണയ്ക്കുന്നതിനായി രൂപകൽപ്പന ചെയ്ത പ്രത്യേക വായ്പാ സൗകര്യങ്ങൾ.">
+                Specialized agricultural credit facilities designed to support our local farming communities with low
+                interest rates.
+              </p>
+              <div class="hero-actions-row">
+                <a href="services.html#loans" class="btn btn-primary" data-en="Agricultural Loans"
+                  data-ml="കാർഷിക വായ്പകൾ">Agricultural Loans</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Slide 3: Deposits -->
+        <div class="hero-slide">
+          <img src="assets/services/depo-hero.png" alt="Deposit Schemes">
+          <div class="hero-overlay"></div>
+          <div class="hero-container full-width-container slide-content-wrapper">
+            <div class="hero-content">
+              <div class="hero-badge light-badge">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <span data-en="Secure High-Yield Savings" data-ml="സുരക്ഷിതമായ നിക്ഷേപ പദ്ധതികൾ">Secure High-Yield
+                  Savings</span>
+              </div>
+              <h1 class="hero-title-light"
+                data-en="Build Wealth with <br><span class='gradient-text-light'>Premium Deposits</span>"
+                data-ml="മികച്ച നിക്ഷേപങ്ങളിലൂടെ <br><span class='gradient-text-light'>സമ്പത്ത് കെട്ടിപ്പടുക്കുക</span>">
+                Build Wealth with <br><span class="gradient-text-light">Premium Deposits</span>
+              </h1>
+              <p class="hero-desc-light"
+                data-en="Secure your future with our high-yielding fixed deposit schemes, recurring plans, and daily savings accounts."
+                data-ml="ഞങ്ങളുടെ ഉയർന്ന ആദായമുള്ള സ്ഥിര നിക്ഷേപ പദ്ധതികൾ, ആവർത്തന പ്ലാനുകൾ, സമ്പാദ്യ നിക്ഷേപങ്ങൾ എന്നിവ ഉപയോഗിച്ച് നിങ്ങളുടെ ഭാവി സുരക്ഷിതമാക്കുക.">
+                Secure your future with our high-yielding fixed deposit schemes, recurring plans, and daily savings
+                accounts.
+              </p>
+              <div class="hero-actions-row">
+                <a href="services.html#deposits" class="btn btn-primary" data-en="View Deposit Plans"
+                  data-ml="നിക്ഷേപ പദ്ധതികൾ">View Deposit Plans</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Home Loan -->
+        <div class="hero-slide">
+          <img src="assets/services/home.webp" alt="Home Loan">
+          <div class="hero-overlay"></div>
+          <div class="hero-container full-width-container slide-content-wrapper">
+            <div class="hero-content">
+              <div class="hero-badge light-badge">
+                <i class="fa-solid fa-house"></i>
+                <span data-en="Build Your Dream Home" data-ml="നിങ്ങളുടെ സ്വപ്ന ഭവനം നിർമ്മിക്കുക">Build Your Dream
+                  Home</span>
+              </div>
+              <h1 class="hero-title-light"
+                data-en="Turn Your Dream Into <br><span class='gradient-text-light'>Reality Today</span>"
+                data-ml="നിങ്ങളുടെ സ്വപ്നം <br><span class='gradient-text-light'>യാഥാർത്ഥ്യമാക്കുക</span>">
+                Turn Your Dream Into <br><span class="gradient-text-light">Reality Today</span>
+              </h1>
+              <p class="hero-desc-light"
+                data-en="Build or buy your dream home with our affordable home loan schemes and long-term, stress-free repayment plans."
+                data-ml="ഞങ്ങളുടെ താങ്ങാനാവുന്ന ഭവന വായ്പാ പദ്ധതികളും ദീർഘകാല തിരിച്ചടവ് പ്ലാനുകളും ഉപയോഗിച്ച് നിങ്ങളുടെ സ്വപ്ന ഭവനം നിർമ്മിക്കുക അല്ലെങ്കിൽ വാങ്ങുക.">
+                Build or buy your dream home with our affordable home loan schemes and long-term, stress-free repayment
+                plans.
+              </p>
+              <div class="hero-actions-row">
+                <a href="services.html#loans" class="btn btn-primary" data-en="Home Loan Details"
+                  data-ml="ഭവന വായ്പാ വിവരങ്ങൾ">Home Loan Details</a>
+                <a href="contact.html" class="btn btn-secondary-light" data-en="Contact Us"
+                  data-ml="ബന്ധപ്പെടുക">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Welcome / About Summary Section -->
-    <section class="about-summary reveal">
-      <div class="about-grid">
+    <!-- President's Message Section — Redesigned -->
+    <section class="president-section-wrap reveal">
+      <!-- Decorative background blobs -->
+      <div class="pres-bg-blob blob-1"></div>
+      <div class="pres-bg-blob blob-2"></div>
 
-        <!-- Left Side: Main Bank Image with Fallback Style if image fails -->
-        <!-- Left Side: Interactive Digital Branch Illustration & Trust Badge -->
-        <div class="about-image-side">
-          <div class="image-box premium-illustration-box">
+      <div class="pres-section-inner">
 
-            <!-- Deep Glass Visual Stack (Acts as a gorgeous graphic when there is no image) -->
-            <div class="visual-art-canvas">
-              <div class="glowing-circle circle-1"></div>
-              <div class="glowing-circle circle-2"></div>
-
-              <!-- Central Graphic Element -->
-              <div class="illustration-main-badge">
-                <div class="badge-ring">
-                  <i class="fas fa-university branch-icon"></i>
-                </div>
-                <span class="badge-label" data-en="Kallada Co-op Bank" data-ml="കല്ലട കോ-ഓപ്പ് ബാങ്ക്">Kallada Co-op
-                  Bank</span>
-                <span class="badge-sub" data-en="Headquarters" data-ml="പ്രധാന ശാഖ">Headquarters</span>
-              </div>
-
-              <!-- Micro Floating Info Tags inside the container -->
-              <div class="micro-badge badge-top">
-                <i class="fas fa-shield-alt text-primary"></i>
-                <span data-en="Govt. Approved" data-ml="ഗവ. അംഗീകൃതം">Govt. Approved</span>
-              </div>
-
-              <div class="micro-badge badge-bottom">
-                <i class="fas fa-check-circle text-primary"></i>
-                <span data-en="100% Secure" data-ml="100% സുരക്ഷിതം">100% Secure</span>
-              </div>
+        <!-- Left: Photo column -->
+        <div class="pres-photo-col">
+          <div class="pres-photo-frame">
+            <div class="pres-accent-stripe"></div>
+            <div class="pres-img-wrapper">
+              <img src="assets/images/presi.jpeg" alt="President Portrait"
+                onerror="this.src=''; this.parentElement.innerHTML='<div class=\'pres-avatar-fallback\'><i class=\'fas fa-user-tie\'></i></div>';">
+              <div class="pres-img-glow"></div>
             </div>
-
-            <!-- The 35+ Years Badge (Perfectly positioned on top of the art canvas) -->
-            <div class="experience-badge accent-float">
-              <h3>35+</h3>
-              <p data-en="Years of Trust" data-ml="വിശ്വാസ്യതയുടെ വർഷങ്ങൾ">Years of Trust</p>
+            <!-- Trust badge -->
+            <div class="pres-trust-badge">
+              <span class="trust-num">35+</span>
+              <span class="trust-label" data-en="Years of Trust" data-ml="വിശ്വാസ്യതയുടെ വർഷങ്ങൾ">Years of Trust</span>
             </div>
-
           </div>
         </div>
 
-        <!-- Right Side: Beautiful Glassmorphic President Card -->
-        <div class="about-content-side">
-          <div class="president-glass-container">
+        <!-- Right: Message column -->
+        <div class="pres-content-col">
 
-            <div class="president-section-header">
-              <span class="president-label" data-en="Leadership Message" data-ml="നേതൃത്വ സന്ദേശം">Leadership
-                Message</span>
-              <h2 data-en="From the President's Desk" data-ml="പ്രസിഡന്റിന്റെ സന്ദേശം">From the President's Desk</h2>
-              <div class="divider"></div>
-            </div>
-
-            <!-- President Profile Info -->
-            <div class="president-profile-card">
-              <div class="president-image-frame">
-                <!-- Ensure a valid path or fallback to an icon if image is missing -->
-                <img src="president.jpg" alt="President Portrait"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="avatar-icon-fallback" style="display: none;">
-                  <i class="fas fa-user-tie"></i>
-                </div>
-              </div>
-              <div class="president-meta-details">
-                <h3 data-en="Adv. [Name Here]" data-ml="അഡ്വ. [പേര് ഇവിടെ]">Adv. [Name Here]</h3>
-                <p class="president-title" data-en="President, Board of Directors" data-ml="പ്രസിഡന്റ്, ഭരണസമിതി">
-                  President, Board of Directors</p>
-              </div>
-            </div>
-
-            <!-- Message Block with highly readable Dark Slate Text -->
-            <div class="president-message-body">
-              <blockquote class="premium-quote">
-                <p class="lead-text"
-                  data-en="Kallada Cooperative Bank remains profoundly committed to the economic stability, modern advancement, and comprehensive welfare of our local farming and business community."
-                  data-ml="ലോക്കൽ കർഷകരുടെയും ബിസിനസ്സ് കമ്മ്യൂണിറ്റിയുടെയും സാമ്പത്തിക സ്ഥിരതയ്ക്കും ആധുനിക പുരോഗതിക്കും സമഗ്രമായ ക്ഷേമത്തിനും കല്ലട സർവീസ് സഹകരണ ബാങ്ക് ആഴത്തിൽ പ്രതിജ്ഞാബദ്ധമാണ്.">
-                  Kallada Cooperative Bank remains profoundly committed to the economic stability, modern advancement,
-                  and comprehensive welfare of our local farming and business community.
-                </p>
-                <p class="body-text"
-                  data-en="We strive to catalyze growth in the agricultural and cooperative sectors by empowering members with highly accessible financial assistance, transparent schemes, and modern banking tools. Our baseline objective will always remain centered on securing sustainable prosperity for every household within our community."
-                  data-ml="വളരെ എളുപ്പത്തിൽ ലഭ്യമാകുന്ന സാമ്പത്തിക സഹായങ്ങൾ, സുതാര്യമായ പദ്ധതികൾ, ആധുനിക ബാങ്കിംഗ് ടൂളുകൾ എന്നിവയിലൂടെ അംഗങ്ങളെ ശാക്തീകരിച്ച് കാർഷിക സഹകരണ മേഖലകളിൽ വളർച്ച കൈവരിക്കാൻ ഞങ്ങൾ ശ്രമിക്കുന്നു. ഞങ്ങളുടെ കമ്മ്യൂണിറ്റിയിലെ ഓരോ കുടുംബത്തിനും സുസ്ഥിരമായ ഐശ്വര്യം ഉറപ്പാക്കുക എന്നതാണ് ഞങ്ങളുടെ ലക്ഷ്യം.">
-                  We strive to catalyze growth in the agricultural and cooperative sectors by empowering members with
-                  highly accessible financial assistance, transparent schemes, and modern banking tools. Our baseline
-                  objective will always remain centered on securing sustainable prosperity for every household within
-                  our community.
-                </p>
-              </blockquote>
-            </div>
-
+          <!-- Top label -->
+          <div class="pres-eyebrow">
+            <span class="eyebrow-dash"></span>
+            <span data-en="Leadership Message" data-ml="നേതൃത്വ സന്ദേശം">Leadership Message</span>
           </div>
+
+          <h2 class="pres-heading" data-en="From the President's Desk" data-ml="പ്രസിഡന്റിന്റെ സന്ദേശം">
+            From the President's Desk
+          </h2>
+
+          <!-- Big decorative quote mark -->
+          <div class="pres-quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+
+          <!-- Lead paragraph -->
+          <p class="pres-lead"
+            data-en="Kallada Cooperative Bank remains profoundly committed to the economic stability, modern advancement, and comprehensive welfare of our local farming and business community."
+            data-ml="ലോക്കൽ കർഷകരുടെയും ബിസിനസ്സ് കമ്മ്യൂണിറ്റിയുടെയും സാമ്പത്തിക സ്ഥിരതയ്ക്കും ആധുനിക പുരോഗതിക്കും സമഗ്രമായ ക്ഷേമത്തിനും കല്ലട സർവീസ് സഹകരണ ബാങ്ക് ആഴത്തിൽ പ്രതിജ്ഞാബദ്ധമാണ്.">
+            Kallada Cooperative Bank remains profoundly committed to the economic stability, modern advancement,
+            and comprehensive welfare of our local farming and business community.
+          </p>
+
+          <!-- Body paragraph -->
+          <p class="pres-body"
+            data-en="We strive to catalyze growth in the agricultural and cooperative sectors by empowering members with highly accessible financial assistance, transparent schemes, and modern banking tools. Our baseline objective will always remain centered on securing sustainable prosperity for every household within our community."
+            data-ml="വളരെ എളുപ്പത്തിൽ ലഭ്യമാകുന്ന സാമ്പത്തിക സഹായങ്ങൾ, സുതാര്യമായ പദ്ധതികൾ, ആധുനിക ബാങ്കിംഗ് ടൂളുകൾ എന്നിവയിലൂടെ അംഗങ്ങളെ ശാക്തീകരിച്ച് കാർഷിക സഹകരണ മേഖലകളിൽ വളർച്ച കൈവരിക്കാൻ ഞങ്ങൾ ശ്രമിക്കുന്നു. ഞങ്ങളുടെ കമ്മ്യൂണിറ്റിയിലെ ഓരോ കുടുംബത്തിനും സുസ്ഥിരമായ ഐശ്വര്യം ഉറപ്പാക്കുക എന്നതാണ് ഞങ്ങളുടെ ലക്ഷ്യം.">
+            We strive to catalyze growth in the agricultural and cooperative sectors by empowering members with
+            highly accessible financial assistance, transparent schemes, and modern banking tools. Our baseline
+            objective will always remain centered on securing sustainable prosperity for every household within
+            our community.
+          </p>
+
+          <!-- Signature / name badge -->
+          <div class="pres-signature-block">
+            <div class="sig-avatar">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="sig-details">
+              <span class="sig-name" data-en="Mr. Sumesh Anandan" data-ml="ശ്രീ സുമേഷ് ആനന്ദൻ">Mr. Sumesh Anandan</span>
+              <span class="sig-role" data-en="President, Board of Directors" data-ml="പ്രസിഡന്റ്, ഭരണസമിതി">President,
+                Board of Directors</span>
+            </div>
+            <div class="sig-emblem">
+              <i class="fas fa-university"></i>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -321,84 +393,6 @@
 
       </div>
     </section>
-
-
-
-    <!-- <section class="extension-modern-asymmetric-section reveal">
-      <div class="asymmetric-layout-container"> -->
-
-    <!-- Left Column: Premium Editorial Content Card (Pillar) -->
-    <!-- <div class="editorial-pillar-card"> -->
-    <!-- <div class="pillar-card-content"> -->
-    <!-- Accent Line & Header -->
-    <!-- <div class="pillar-top-accent">
-              <span class="accent-bar"></span>
-              <span data-en="EXTENDED REACH BANKING" data-ml="വിപുലീകരിച്ച ബാങ്കിംഗ് സേവനം">EXTENDED REACH
-                BANKING</span>
-            </div>
-
-            <h2 class="pillar-title" data-en="Extension Center Services" data-ml="എക്സ്റ്റൻഷൻ കൗണ്ടർ സേവനങ്ങൾ">
-              Extension Center Services
-            </h2> -->
-
-    <!-- <p class="pillar-description"
-              data-en="Bringing reliable banking directly to your neighborhood. Our extension centers offer quick cash transactions, local deposits, and direct inquiry support so you don't have to visit the main branch."
-              data-ml="ബാങ്കിംഗ് നിങ്ങളുടെ തൊട്ടടുത്തേക്ക് എത്തിക്കുന്നു. ഞങ്ങളുടെ എക്സ്റ്റൻഷൻ കൗണ്ടറുകൾ വഴി പ്രധാന ശാഖ സന്ദർശിക്കാതെ തന്നെ വേഗത്തിലുള്ള പണമിടപാടുകളും നിക്ഷേപങ്ങളും നടത്താം.">
-              Bringing reliable banking directly to your neighborhood. Our extension centers offer quick cash
-              transactions, local deposits, and direct inquiry support so you don't have to visit the main branch.
-            </p> -->
-
-    <!-- Minimalist Line-Style Features -->
-    <!-- <div class="pillar-line-features">
-              <div class="line-feature-item">
-                <i class="fa-solid fa-money-bill-transfer"></i>
-                <span data-en="Instant Cash Services" data-ml="വേഗത്തിലുള്ള പണമിടപാടുകൾ">Instant Cash Services</span>
-              </div>
-              <div class="line-feature-item">
-                <i class="fa-solid fa-file-invoice"></i>
-                <span data-en="Easy Deposits" data-ml="എളുപ്പമുള്ള നിക്ഷേപങ്ങൾ">Easy Deposits</span>
-              </div>
-              <div class="line-feature-item">
-                <i class="fa-solid fa-print"></i>
-                <span data-en="Passbook Printing" data-ml="പാസ്ബുക്ക് പ്രിന്റിംഗ്">Passbook Printing</span>
-              </div>
-              <div class="line-feature-item">
-                <i class="fa-solid fa-user-shield"></i>
-                <span data-en="Localized Support" data-ml="പ്രാദേശിക കസ്റ്റമർ കെയർ">Localized Support</span>
-              </div>
-            </div> -->
-
-    <!-- Sleek Link Button -->
-    <!-- <a href="services.html" class="pillar-action-btn">
-              <span data-en="View Extension Centers" data-ml="കൗണ്ടറുകൾ കണ്ടെത്താം">View Extension Centers</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div> -->
-
-    <!-- Right Column: Large Suspended Image Frame with Overlapping Glass Badge -->
-    <!-- <div class="suspended-image-frame">
-          <div class="frame-canvas">
-            <img src="assets/services/extension.png" alt="Extension Center Services">
-            <div class="image-gradient-shroud"></div> -->
-
-    <!-- Overlapping Interactive Glass Tag (Suspended inside the photo area) -->
-    <!-- <div class="suspended-glass-badge">
-              <div class="glass-badge-inner">
-                <div class="live-signal">
-                  <span class="live-dot"></span>
-                  <span data-en="Active Branches" data-ml="സജീവ ശാഖകൾ">Active Branches</span>
-                </div>
-                <p data-en="Convenient locations serving you daily." data-ml="എല്ലാ ദിവസവും മികച്ച സേവനം.">Convenient
-                  locations serving you daily.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-
 
     <!-- Achievements Section -->
     <section class="achievements-section reveal">
