@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recipients
         $mail->setFrom('sms.pravasisitsolutions@gmail.com', 'East Kallada (South) Service Cooperative Bank Website');
        
-        $mail->addAddress('reshmakpravasis@gmail.com');
+        $mail->addAddress('ekscb187@gmail.com');
         if ($email !== "Not provided") {
             $mail->addReplyTo($email, $name);
         }
