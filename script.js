@@ -1,5 +1,14 @@
 document.documentElement.classList.add('js-enabled');
 
+// Helper to ensure DOMContentLoaded events run even if script runs after DOM is parsed
+function runAfterDOMContentLoaded(fn) {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fn);
+  } else {
+    fn();
+  }
+}
+
 // Dynamic layout component loader function
 async function loadComponent(elementId, filePath, callback) {
   try {
@@ -50,7 +59,7 @@ function initializeLanguageToggle() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+runAfterDOMContentLoaded(() => {
   // 1. Inject Header
   loadComponent("global-header", "header.html", () => {
     // Automatically match and highlight the active page link
@@ -88,9 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
   revealElements.forEach(element => {
     revealObserver.observe(element);
   });
+
+  initializeContactForm();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+runAfterDOMContentLoaded(() => {
   const serviceNodes = document.querySelectorAll(".service-action-node");
   const displayImg = document.querySelector("#service-visual-target img");
 
@@ -133,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+runAfterDOMContentLoaded(() => {
   const communityNodes = document.querySelectorAll(".community-action-node");
   const screenImg = document.querySelector("#community-screen-viewport img");
 
@@ -162,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Hero Slider Auto-Play Logic
-document.addEventListener("DOMContentLoaded", () => {
+runAfterDOMContentLoaded(() => {
   const slides = document.querySelectorAll(".hero-slide");
   if (slides.length === 0) return;
 
@@ -177,3 +188,71 @@ document.addEventListener("DOMContentLoaded", () => {
   // Change slide every 7 seconds
   setInterval(nextSlide, 7000);
 });
+
+// Contact Form Submission Handler
+function initializeContactForm() {
+  const form = document.getElementById('secure-communication-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Create or locate message container
+    let statusMsg = form.querySelector('.form-status-msg');
+    if (!statusMsg) {
+      statusMsg = document.createElement('div');
+      statusMsg.className = 'form-status-msg';
+      form.appendChild(statusMsg);
+    }
+
+    // Get current language to show correct loading text
+    const currentLang = localStorage.getItem('siteLang') || 'en';
+    const loadingText = currentLang === 'en' ? 'Sending message...' : 'സന്ദേശം അയക്കുന്നു...';
+
+    statusMsg.className = 'form-status-msg loading';
+    statusMsg.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>${loadingText}</span>`;
+
+    // Disable submit button
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnHTML = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+
+    try {
+      const formData = new FormData();
+      formData.append('name', document.getElementById('frm-name').value);
+      formData.append('email', document.getElementById('frm-email').value);
+      formData.append('phone', document.getElementById('phone').value);
+      formData.append('message', document.getElementById('frm-message').value);
+
+      const response = await fetch('send_mail.php', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+
+      if (result.status === 'success') {
+        statusMsg.className = 'form-status-msg success';
+        statusMsg.innerHTML = `<i class="fas fa-circle-check"></i> <span>${result.message}</span>`;
+        form.reset();
+      } else {
+        statusMsg.className = 'form-status-msg error';
+        statusMsg.innerHTML = `<i class="fas fa-circle-xmark"></i> <span>${result.message}</span>`;
+      }
+    } catch (error) {
+      console.error('Mail send error:', error);
+      const errorMsg = currentLang === 'en' 
+        ? 'Failed to send message. Please check your internet connection and try again.'
+        : 'സന്ദേശം അയക്കാൻ കഴിഞ്ഞില്ല. ദയവായി നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക.';
+      statusMsg.className = 'form-status-msg error';
+      statusMsg.innerHTML = `<i class="fas fa-circle-xmark"></i> <span>${errorMsg}</span>`;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHTML;
+    }
+  });
+}
