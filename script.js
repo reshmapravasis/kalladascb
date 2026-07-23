@@ -21,6 +21,7 @@ function initializeLanguageToggle() {
   let currentLang = localStorage.getItem('siteLang') || 'en';
 
   function applyLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
     const elements = document.querySelectorAll('[data-en][data-ml]');
     elements.forEach(el => {
       const text = el.getAttribute('data-' + lang);
@@ -47,6 +48,7 @@ function initializeLanguageToggle() {
     applyLanguage(newLang);
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Inject Header

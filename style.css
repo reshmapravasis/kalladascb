@@ -53,6 +53,7 @@ body {
 }
 
 html {
+  font-size: 110%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -227,6 +228,14 @@ main {
   padding: 0.25rem 0;
 }
 
+html[lang="ml"] .nav-menu a {
+  font-size: 1.0rem;
+}
+
+html[lang="ml"] .nav-menu ul {
+  gap: 1.2rem;
+}
+
 .nav-menu a:hover,
 .nav-menu a.active {
   color: #059669;
@@ -264,6 +273,7 @@ main {
   background: var(--clr-primary);
   transform: translateY(-1px);
 }
+
 
 /* ==========================================
    Hero Content & Inner Modules Styles
@@ -517,6 +527,74 @@ main {
 }
 
 /* ==========================================================
+   Malayalam (lang="ml") Hero Section & Header Typography Adjustments
+   ========================================================== */
+html[lang="ml"] .logo span {
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+html[lang="ml"] .hero-content h1 {
+  font-size: 2.7rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+html[lang="ml"] .hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+html[lang="ml"] .hero-badge {
+  margin-bottom: 1rem;
+}
+
+html[lang="ml"] .inner-hero h1 {
+  font-size: 2.4rem;
+}
+
+/* Tablet / Medium Screens */
+@media (max-width: 1024px) {
+  html[lang="ml"] .logo span {
+    font-size: 1.0rem;
+  }
+
+  html[lang="ml"] .hero-content h1 {
+    font-size: 2.1rem;
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+  }
+
+  html[lang="ml"] .hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 640px) {
+  html[lang="ml"] .logo span {
+    font-size: 0.9rem;
+  }
+
+  html[lang="ml"] .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  html[lang="ml"] .hero-content p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ==========================================================
    Animation Keyframe Systems
    ========================================================== */
 @keyframes heroTextFadeIn {
@@ -601,10 +679,16 @@ main {
 
 /* Section wrapper */
 .president-section-wrap {
+
+  background:
+    linear-gradient(135deg, #6fc1f5 0%, #b8e8ff 100%);
+
+  padding: 120px 0;
+
   position: relative;
-  padding: 6rem 0;
-  background: linear-gradient(135deg, #f0fdf8 0%, #e8f5f0 40%, #f0f9ff 100%);
+
   overflow: hidden;
+
 }
 
 /* Decorative background blobs */
@@ -614,6 +698,27 @@ main {
   filter: blur(80px);
   pointer-events: none;
   z-index: 0;
+}
+
+.pres-section-inner {
+
+  background: #fff;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, .12);
+
+  padding: 70px;
+
+  display: grid;
+
+  grid-template-columns: 380px 1fr;
+
+  gap: 70px;
+
+  position: relative;
+
 }
 
 .pres-bg-blob.blob-1 {
@@ -674,9 +779,51 @@ main {
 }
 
 .pres-photo-frame {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
+
+  margin-top: -120px;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, .2);
+
+}
+
+
+.circle1 {
+
+  width: 300px;
+
+  height: 300px;
+
+  background: #ffffff20;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: -120px;
+
+  left: -120px;
+
+}
+
+.circle2 {
+
+  width: 450px;
+
+  height: 450px;
+
+  background: #0B3C6F10;
+
+  border-radius: 50%;
+
+  bottom: -180px;
+
+  right: -150px;
+
 }
 
 /* Green vertical accent stripe behind the image */
@@ -814,7 +961,7 @@ main {
 
 /* Heading */
 .pres-heading {
-  font-size: 2.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
   color: var(--clr-text-main);
   line-height: 1.2;
@@ -824,7 +971,7 @@ main {
 /* Decorative quote icon */
 .pres-quote-icon {
   font-size: 3rem;
-  color: var(--clr-primary);
+  color: #059669;
   opacity: 0.2;
   line-height: 1;
   margin-bottom: 0.75rem;
@@ -2686,9 +2833,8 @@ main {
 }
 
 .footer-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 2rem 4rem 2rem;
+  width: 100%;
+  padding: 0 3% 4rem 3%;
 }
 
 .footer-grid {
@@ -2712,6 +2858,37 @@ main {
   font-size: 0.95rem;
   margin-top: 0.5rem;
   color: #ffffff;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img-link {
+  display: inline-block;
+  margin-top: -5px;
+}
+
+.footer-logo-img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-text-group h4 {
+  margin: 0;
+}
+
+.footer-logo-text-group .mini-divider {
+  margin: 0.5rem 0 0 0;
 }
 
 .footer-links-list {
@@ -2791,13 +2968,12 @@ main {
 /* Footer Bottom Bar */
 .footer-bottom {
   background: #090d16;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3%;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-bottom-container {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -4108,7 +4284,22 @@ main {
 }
 
 .achievement-card {
-  background: linear-gradient(135deg, #7a00ff 0%, #4600ff 16%, #0066ff 33%, #00b050 50%, #ffc000 66%, #ff7f00 83%, #ff3333 100%);
+  background: linear-gradient(135deg,
+      hsl(270, 100%, 60%) 0%,
+      /* Violet */
+      hsl(245, 100%, 55%) 16%,
+      /* Indigo */
+      hsl(215, 100%, 50%) 33%,
+      /* Blue */
+      hsl(120, 90%, 55%) 50%,
+      /* Green */
+      hsl(55, 100%, 55%) 66%,
+      /* Yellow */
+      hsl(30, 100%, 55%) 83%,
+      /* Orange */
+      hsl(0, 100%, 60%) 100%
+      /* Red */
+    );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -4216,7 +4407,7 @@ main {
 }
 
 .section-title h2 {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
   color: #059669;
 }
@@ -4252,7 +4443,7 @@ main {
 }
 
 .download-name {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #1b2d4d;
   font-weight: 500;
 }
@@ -4267,7 +4458,7 @@ main {
 }
 
 .download-action i {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .download-item:hover .download-action {
@@ -4284,11 +4475,11 @@ main {
   }
 
   .download-name {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .download-action {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
 }
