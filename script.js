@@ -75,6 +75,9 @@ runAfterDOMContentLoaded(() => {
 
     // Initialize language toggle after header is loaded
     initializeLanguageToggle();
+
+    // Initialize mobile hamburger menu
+    initializeMobileMenu();
   });
 
   // 2. Inject Footer
@@ -113,34 +116,26 @@ runAfterDOMContentLoaded(() => {
   };
 
   serviceNodes.forEach(node => {
-    node.addEventListener("mouseenter", () => {
-      // If this item is already active, do nothing
+    const switchServiceImage = () => {
       if (node.classList.contains("active")) return;
-
-      // 1. Clear current active state classes from list
       serviceNodes.forEach(n => n.classList.remove("active"));
-
-      // 2. Set hovered node to active
       node.classList.add("active");
 
-      // 3. Get the corresponding image path
       const targetService = node.getAttribute("data-service");
-      if (imageMap[targetService]) {
-
-        // Step A: Fade out the old image
+      if (imageMap[targetService] && displayImg) {
         displayImg.classList.remove("fade-in-active");
         displayImg.classList.add("fade-out");
 
         setTimeout(() => {
-          // Step B: Swap the image source
           displayImg.src = imageMap[targetService];
-
-          // Step C: Remove fade-out and trigger the persistent enlarged active state
           displayImg.classList.remove("fade-out");
           displayImg.classList.add("fade-in-active");
-        }, 200); // Matches CSS transition delay
+        }, 200);
       }
-    });
+    };
+
+    node.addEventListener("mouseenter", switchServiceImage);
+    node.addEventListener("click", switchServiceImage);
   });
 });
 
@@ -253,6 +248,35 @@ function initializeContactForm() {
     } finally {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnHTML;
+    }
+  });
+}
+
+// Mobile Hamburger Menu Toggle
+function initializeMobileMenu() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (!menuToggle || !navMenu) return;
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('open');
+  });
+
+  // Close menu when a nav link is clicked
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('open');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('open');
     }
   });
 }
