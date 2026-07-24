@@ -53,9 +53,27 @@ body {
 }
 
 html {
-  font-size: 110%;
+  font-size: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 105%;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 97.5%;
+  }
+}
+
+@media (max-width: 1199px) {
+  html {
+    font-size: 93.75%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -169,8 +187,8 @@ main {
 .top-header {
   background-color: var(--clr-primary);
   color: var(--clr-white);
-  font-size: 0.85rem;
-  padding: 0.5rem 0;
+  font-size: 0.92rem;
+  padding: 0.65rem 0;
 }
 
 .top-header-container {
@@ -178,7 +196,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 3%;
+  padding: 0 3.5%;
 }
 
 .top-contact,
@@ -199,24 +217,36 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.75rem 3%;
+  padding: 1.1rem 3.5%;
+  gap: 1.25rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(0.85rem, 1.3vw, 1.5rem);
   text-decoration: none;
   color: #059669;
   font-weight: 700;
-  font-size: 1.4rem;
-  max-width: 50%;
+  font-size: clamp(1.05rem, 1.35vw, 1.5rem);
+  max-width: min(52%, 560px);
   margin-right: auto;
+  flex-shrink: 0;
+}
+
+.logo span {
+  font-size: clamp(0.98rem, 1.2vw, 1.35rem);
+  line-height: 1.35;
+  white-space: normal;
+  word-break: keep-all;
+  font-weight: 700;
 }
 
 .header-logo-img {
-  height: 180px;
+  height: clamp(100px, 8vw, 135px);
   width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* Mobile hamburger toggle button */
@@ -253,31 +283,34 @@ main {
 
 .nav-menu {
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: clamp(0.5rem, 1.5vw, 2rem);
 }
 
 .nav-menu ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: clamp(0.6rem, 1.4vw, 2.2rem);
+  align-items: center;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #6fc1f5;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: clamp(0.92rem, 1.05vw, 1.22rem);
   transition: var(--transition);
   position: relative;
-  padding: 0.25rem 0;
+  padding: 0.35rem 0;
+  white-space: nowrap;
 }
 
 html[lang="ml"] .nav-menu a {
-  font-size: 1.0rem;
+  font-size: clamp(0.88rem, 0.98vw, 1.1rem);
+  white-space: nowrap;
 }
 
 html[lang="ml"] .nav-menu ul {
-  gap: 1.2rem;
+  gap: clamp(0.5rem, 1.1vw, 1.4rem);
 }
 
 .nav-menu a:hover,
@@ -305,12 +338,14 @@ html[lang="ml"] .nav-menu ul {
   background: var(--clr-secondary);
   color: var(--clr-white);
   border: none;
-  padding: 0.5rem 1.25rem;
+  padding: clamp(0.55rem, 0.75vw, 0.75rem) clamp(1rem, 1.25vw, 1.5rem);
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: clamp(0.85rem, 0.95vw, 1rem);
   cursor: pointer;
   transition: var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .lang-switch:hover {
@@ -427,11 +462,11 @@ html[lang="ml"] .nav-menu ul {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 3.2vw, 3.5rem);
   font-weight: 800;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--clr-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-title-light {
@@ -446,9 +481,9 @@ html[lang="ml"] .nav-menu ul {
 }
 
 .hero-content p {
-  font-size: 1.15rem;
+  font-size: clamp(0.95rem, 1.1vw, 1.15rem);
   color: var(--clr-text-muted);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
   max-width: 580px;
 }
 
@@ -574,18 +609,20 @@ html[lang="ml"] .nav-menu ul {
    Malayalam (lang="ml") Hero Section & Header Typography Adjustments
    ========================================================== */
 html[lang="ml"] .logo span {
-  font-size: 1.15rem;
+  font-size: clamp(0.75rem, 0.95vw, 1.15rem);
   line-height: 1.35;
+  white-space: normal;
+  word-break: keep-all;
 }
 
 html[lang="ml"] .hero-content h1 {
-  font-size: 2.7rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.7rem);
   line-height: 1.35;
   margin-bottom: 1rem;
 }
 
 html[lang="ml"] .hero-content p {
-  font-size: 1.05rem;
+  font-size: clamp(0.88rem, 1.02vw, 1.05rem);
   line-height: 1.6;
   margin-bottom: 2rem;
   max-width: 650px;
@@ -3086,7 +3123,38 @@ html[lang="ml"] .inner-hero h1 {
 /* ==========================================
    Responsive Viewport Adaptability
    ========================================== */
+@media (max-width: 1366px) {
+  .header-container {
+    padding: 0.5rem 2%;
+    gap: 0.75rem;
+  }
+  .header-logo-img {
+    height: clamp(80px, 6vw, 100px);
+  }
+  .nav-menu ul {
+    gap: clamp(0.4rem, 1vw, 1.2rem);
+  }
+}
+
 @media (max-width: 1200px) {
+  .header-container {
+    padding: 0.5rem 1.5%;
+  }
+  .header-logo-img {
+    height: clamp(75px, 5.5vw, 90px);
+  }
+  .logo {
+    gap: 0.5rem;
+  }
+  .logo span {
+    font-size: 0.9rem;
+  }
+  .nav-menu a {
+    font-size: 0.9rem;
+  }
+  html[lang="ml"] .nav-menu a {
+    font-size: 0.82rem;
+  }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -4592,18 +4660,19 @@ img, video, iframe, canvas {
 }
 
 /* Malayalam Typography Responsive Truncation Guards */
-html[lang="ml"] h1,
-html[lang="ml"] h2,
-html[lang="ml"] h3,
-html[lang="ml"] h4,
 html[lang="ml"] p,
-html[lang="ml"] span,
+html[lang="ml"] article {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 html[lang="ml"] a,
-html[lang="ml"] div {
-  overflow-wrap: break-word !important;
-  word-wrap: break-word !important;
-  word-break: break-word !important;
-  hyphens: auto !important;
+html[lang="ml"] button,
+html[lang="ml"] .nav-menu a,
+html[lang="ml"] .logo span,
+html[lang="ml"] .lang-switch {
+  word-break: normal !important;
+  hyphens: none !important;
 }
 
 /* ==========================================================
